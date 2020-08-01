@@ -20,10 +20,25 @@
     </div>
 
     <!-- all the other stuff -->
+    <form method='POST' action='/result'>
+        <label for="age">Age:</label>
+        <input type="text" id="age" name="age"><br><br>
+        <label for="weight">Weight on Earth:</label>
+        <input type="text" id="weight" name="weight"><br><br>
+        <label for="planet">What Planet are you travelling to:</label>
+        <select name="planet_dropdown">
+            <option value='Mercury'>Mercury</option>
+            <option value='Venus'>Venus</option>
+            <option value='Mars' selected="selected">Mars</option>
+            <option value="Jupiter">Jupiter</option>
+            <option value='Saturn'>Saturn</option>
+            <option value='Uranus'>Uranus</option>
+            <option value='Neptune'>Neptune</option>
 
+        </select>
 
-    <!-- Launch button -->
-    <form method='GET' action='/result'>
+        <!-- Launch button -->
+
         <button id="launch_btn" type="submit">Launch</button>
     </form>
 
