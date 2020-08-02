@@ -68,16 +68,19 @@ input[type=text]:focus{
     background-color: white;
     border: 3px solid #5E4180;
 }
-button {
+.data-input button {
     width: 100px;
     height: 100px;
     font-size: 20px;
-    margin: 10px 0px 10px 0px;
     color: #4F3C8C;
     border: solid #D3C9F2 1px;
     border-radius: 50%;
     box-shadow: #FBF6D0 0px 0px 0px 7px;
     background: #FAEE84;
+}
+.launch-button {
+    margin: 10px 0px 10px 0px;
+    padding: 0;
 }
 .footer {
     padding: 5px;
