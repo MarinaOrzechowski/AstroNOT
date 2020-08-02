@@ -1,4 +1,7 @@
 # AstroNot Impossible to Reach the Stars
+https://fast-castle-68171.herokuapp.com/
+
+## About the app
 Web App that helps people get a feeling of what it is like to be an astronaut. MLH hackathon "To the moon and Hack". 
 
 ## Tools and languages used
