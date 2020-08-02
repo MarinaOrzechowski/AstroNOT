@@ -19,6 +19,12 @@ body {
     align-items: center;
     color: white;
     background: #625199;
+    background-image: url('night-sky.png'), url(stargazing.png);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+    background-attachment: fixed, fixed;
+    background-size: cover, cover;
+    background-blend-mode: soft-light;
 }
 .container {
     width: 500px;
@@ -67,6 +73,11 @@ body {
     border-radius: 50%;
     box-shadow: #FBF6D0 0px 0px 0px 7px;
     background: #FAEE84;
+}
+.button button img {
+    margin: 0;
+    padding: 0;
+    width: 40px;
 }
 .footer {
     margin: 0;
