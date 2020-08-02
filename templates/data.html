@@ -17,8 +17,9 @@
             <h1>Astro<em>Not</em> Impossible<br>To Reach The Stars</h1>
         </div>
         <div class="main-body">
-            <div class="data-input">
-                <form method='POST' action='/result'>
+            <form class="data-input" method='POST' action='/result'>
+                <div class="data-input">
+
                     <label for="age">Age:</label>
                     <input type="text" id="age" name="age"><br><br>
                     <label for="weight">Weight on Earth in lb:</label>
@@ -33,10 +34,12 @@
                         <option value='Uranus'>Uranus</option>
                         <option value='Neptune'>Neptune</option>
                     </select>
-                </form>
-            </div>
-            <!-- Launch Button -->
-            <button id="launch_btn" type="submit">LAUNCH</button>
+
+                </div>
+
+                <!-- Launch Button -->
+                <button id="launch_btn" type="submit">LAUNCH</button>
+            </form>
         </div>
         <div class="footer">
             <p>Made by MLH Participants<br>Copyright © 2020. All rights reserved.</p>
