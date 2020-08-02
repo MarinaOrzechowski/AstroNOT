@@ -1,28 +1,33 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
-        <meta name = "description" content = "AstroNot Impossible To Reach The Stars">
-        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity = "sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin = "anonymous" />
-        <link rel = "stylesheet" href = "../static/result-styles.css">
-        <title>AstroNot</title>
-    </head>
-    <body>
-        <div class = "container">
-            <div class = "header ">
-                <h1>So, you are in space! And...</h1>
-            </div>
-            <div class = "main-body">
-                <label>Your weight on the {{planet_result | safe}} is: {{weight_result | safe}} lb</label><br>
-                <label>Your age on the {{planet_result | safe}} is: years</label><br>
-                <label>{{message_astronaut}}</label><br>
-                <label>{{a_name}} was born on {{a_birth_date}} at {{a_birth_place}}. They went to {{a_college}} and studied
-                    {{a_major_b}}. {{a_name}} chose {{a_major_g}} for their graduate program. In {{a_year_went_to_space}}
-                    {{a_name}} was sent into space for the first time. They completed {{a_flights}} of space flights
-                    ({{a_flights_hr}} hours), and {{a_walks}} space walks ({{a_walks_hr}} hours). {{a_name}} is {{a_alive}} now.
-                </label>
-            </div>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+    <meta name="description" content="AstroNot Impossible To Reach The Stars">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../static/result-styles.css">
+    <title>AstroNot</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header ">
+            <h1>So, you are in space! And...</h1>
         </div>
-    </body>
+        <div class="main-body">
+            <label>Your weight on the {{planet_result | safe}} is: {{weight_result | safe}} lb</label><br>
+            <label>Your age on the {{planet_result | safe}} is: years</label><br>
+            <label>{{message_astronaut}}</label><br>
+            <label>{{a_name}} was born on {{a_birth_date}} at {{a_birth_place}}. They went to {{a_college}} and studied
+                {{a_major_b}}. {{a_name}} chose {{a_major_g}} for their graduate program. In {{a_year_went_to_space}}
+                {{a_name}} was sent into space for the first time. They completed {{a_flights}} of space flights
+                ({{a_flights_hr}} hours), and {{a_walks}} space walks ({{a_walks_hr}} hours). {{a_name}} is {{a_alive}}
+                now.
+            </label>
+        </div>
+    </div>
+</body>
+
 </html>
