@@ -12,7 +12,7 @@ df = pd.read_csv(
 df = df[pd.notnull(df['Year'])]
 df['birth_year'] = df['Birth Date'].astype('str').str[-4:].astype(int)
 df['age'] = df['Year'] - df['birth_year']
-df = df[['Name', 'age', 'Year', 'Status', 'Birth Date', 'Birth Place',
+df = df[['Name', 'age', 'Gender', 'Year', 'Status', 'Birth Date', 'Birth Place',
          'Alma Mater', 'Undergraduate Major', 'Graduate Major',
          'Space Flights',
          'Space Flight (hr)', 'Space Walks', 'Space Walks (hr)']]
@@ -47,12 +47,26 @@ def result():
         astronauts = df[df['age'].astype(int) == int(age)]
         if len(astronauts.index) > 0:
             astronaut = astronauts.sample()  # randomly choose one astronaut's info to output
-            is_astronaut_found = True
+            message_astronaut = 'We found an astronaut who went to space at your age!'
         else:
-            is_astronaut_found = False
+            message_astronaut = 'Did you know that the youngest US astronaut who went to space was '
             astronaut = df.iloc[0]
+        a_name = astronaut.iloc[0]['Name']
+        a_year_went_to_space = astronaut.iloc[0]['Year']
+        a_birth_date = astronaut.iloc[0]['Birth Date']
+        a_birth_place = astronaut.iloc[0]['Birth Place']
+        a_college = astronaut.iloc[0]['Alma Mater']
+        a_major_b = astronaut.iloc[0]['Undergraduate Major']
+        a_major_g = astronaut.iloc[0]['Graduate Major']
+        a_flights = astronaut.iloc[0]['Space Flights']
+        a_flights_hr = astronaut.iloc[0]['Space Flight (hr)']
+        a_walks = astronaut.iloc[0]['Space Walks']
+        a_walks_hr = astronaut.iloc[0]['Space Walks (hr)']
+        a_alive = astronaut.iloc[0]['Status']
+        print(a_name, a_year_went_to_space, a_birth_date, a_birth_place, a_college,
+              a_major_b, a_major_g, a_flights, a_flights_hr, a_walks, a_walks_hr, a_alive)
 
-    return render_template("result.html", planet_result=planet, weight_result=new_weight)
+    return render_template("result.html", planet_result=planet, weight_result=new_weight, a_name=a_name, a_year_went_to_space=a_year_went_to_space, a_birth_date=a_birth_date, a_birth_place=a_birth_place, a_college=a_college, a_major_b=a_major_b, a_major_g=a_major_g, a_flights=a_flights, a_flights_hr=a_flights_hr, a_walks=a_walks, a_walks_hr=a_walks_hr, a_alive=a_alive, message_astronaut=message_astronaut)
 
 
 if __name__ == '__main__':
