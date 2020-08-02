@@ -49,7 +49,8 @@ You can run the app on your browser at http://127.0.0.1:8050
 
 ![ezgif com-video-to-gif](https://user-images.githubusercontent.com/43459295/89117092-f9bfb800-d468-11ea-9128-87c6595e57c3.gif)
 
+<img width="594" alt="Capture1" src="https://user-images.githubusercontent.com/43459295/89117526-5ffa0a00-d46c-11ea-83de-9a3ba304d229.PNG">
 <img width="861" alt="Capture2" src="https://user-images.githubusercontent.com/43459295/89117523-5d97b000-d46c-11ea-899a-95727ba49709.PNG">
 <img width="715" alt="Capture3" src="https://user-images.githubusercontent.com/43459295/89117524-5ec8dd00-d46c-11ea-9e9f-05111bd40aae.PNG">
-<img width="594" alt="Capture1" src="https://user-images.githubusercontent.com/43459295/89117526-5ffa0a00-d46c-11ea-83de-9a3ba304d229.PNG">
+
 
