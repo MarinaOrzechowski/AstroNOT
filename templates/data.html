@@ -1,48 +1,43 @@
-<!doctype html>
-
-<html lang="en">
-
-<head>
-    <meta charset="utf-8">
-
-    <title>AstroNot Impossible To Reach The Stars</title>
-    <meta name="description" content="Happiness data collector">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../static/style.css">
-
-</head>
-
-<body>
-
-    <!-- background and header -->
-    <div>
-    </div>
-
-    <!-- all the other stuff -->
-    <form method='POST' action='/result'>
-        <label for="age">Age:</label>
-        <input type="text" id="age" name="age"><br><br>
-        <label for="weight">Weight on Earth in lb:</label>
-        <input type="text" id="weight" name="weight"><br><br>
-        <label for="planet">What Planet are you travelling to:</label>
-        <select name="planet_dropdown">
-            <option value='Mercury'>Mercury</option>
-            <option value='Venus'>Venus</option>
-            <option value='Mars' selected="selected">Mars</option>
-            <option value="Jupiter">Jupiter</option>
-            <option value='Saturn'>Saturn</option>
-            <option value='Uranus'>Uranus</option>
-            <option value='Neptune'>Neptune</option>
-
-        </select>
-
-        <!-- Launch button -->
-
-        <button id="launch_btn" type="submit">Launch</button>
-    </form>
-
-
-</body>
-
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <meta name = "description" content = "Happiness Data Collector">
+        <link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity = "sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin = "anonymous">
+        <link rel = "stylesheet" href = "../static/data-styles.css">
+        <title>AstroNot</title>
+    </head>
+    <body>
+        <div class = "container">
+            <div class = "header">
+                <h1>Astro<em>Not</em> Impossible<br>To Reach The Stars</h1>
+            </div>
+            <div class = "main-body">
+                <div class = "data-input">
+                    <form method='POST' action='/result'>
+                        <label for="age">Age:</label>
+                        <input type="text" id="age" name="age"><br><br>
+                        <label for="weight">Weight on Earth in lb:</label>
+                        <input type="text" id="weight" name="weight"><br><br>
+                        <label for="planet">What Planet are you travelling to:</label>
+                        <select name="planet_dropdown">
+                            <option value='Mercury'>Mercury</option>
+                            <option value='Venus'>Venus</option>
+                            <option value='Mars' selected="selected">Mars</option>
+                            <option value="Jupiter">Jupiter</option>
+                            <option value='Saturn'>Saturn</option>
+                            <option value='Uranus'>Uranus</option>
+                            <option value='Neptune'>Neptune</option>
+                        </select>
+                    </form>
+                </div>
+                <!-- Launch Button -->
+                <button id = "launch_btn" type="submit">LAUNCH</button>
+            </div>
+            <div class = "footer">
+                <p>Made by MLH Participants<br>Copyright © 2020. All rights reserved.</p>
+            </div>
+        </div>
+    </body>
 </html>

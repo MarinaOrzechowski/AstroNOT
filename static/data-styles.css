@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+body {
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #543C7A;
+    background-image: url('night-stars.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1 {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    line-height: 50px;
+}
+p, form, input {
+    margin: 0;
+    padding: 0;
+}
+input {
+    background: #B7A5CC;
+}
+.container {
+    margin: auto;
+    padding: 0px;
+    width: 700px;
+    height: 466px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -233px 0 0 -350px;
+    color: white;
+    border: solid #F3E8FF 1px;
+}
+.header {
+    margin: 0;
+    padding: 10px;
+    background: #5E417F;
+    border-bottom: solid #F3E8FF 1px;
+}
+.main-body {
+    padding: 10px;
+    background: #B7A5CC;
+}
+.data-input {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+.data-input form input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-bottom: 2px solid #5E4180;
+}
+input[type=text]:focus{
+    background-color: white;
+    border: 3px solid #5E4180;
+}
+button {
+    width: 100px;
+    height: 100px;
+    font-size: 20px;
+    margin: 10px 0px 10px 0px;
+    color: #4F3C8C;
+    border: solid #D3C9F2 1px;
+    border-radius: 50%;
+    box-shadow: #FBF6D0 0px 0px 0px 7px;
+    background: #FAEE84;
+}
+.footer {
+    padding: 5px;
+    border-top: solid #F3E8FF 1px;
+    background: #A091B3;
+}
